@@ -1,3 +1,5 @@
+@import url("../css/fonts.css");
+
 html,
 body {
   margin: 0%;
@@ -5,14 +7,32 @@ body {
   overflow-x: hidden;
 }
 
+:root {
+
+  /* Theme colors */
+  --text-gray:#3f4954;
+  --text-light: #686666da;
+  --bg-color: #0f0f0f;
+  --white: #ffffff;
+  --midnight: #104f55;
+
+  /* gradient color  */
+  --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)
+
+  /* theme font-family */
+  --Abel:'Abel',cursive;
+}
+
 /*------------Global clases----------*/
 a {
   text-decoration: none;
+  color: var(--text-gray)
 }
 .flex-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  color: var(--text-gray)
 }
 ul {
   list-style-type: none;
@@ -21,22 +41,54 @@ ul {
 /*-----------------navbar---------*/
 
 .nav {
-  background: wheat;
+  background: white;
   padding: 0 2rem;
-  height: 0ren;
-  min-height: 10vh;
+  height: 0rem;
+  min-height: 9vh;
   overflow: hidden;
+  transition: height 0.5s ease-in-out
 }
 
 .nav .nav-menu {
   justify-content: space-between;
 }
 
+.nav .toggle-collapse{
+  position: absolute;
+  top: 0%;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+
+.nav .toggle-collapse .toggle-icon {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+}
+.nav .toggle-collapse .toggle-icon i{
+  font-size: 1.4rem;
+  color: var(--text-gray);
+}
+.collapse{
+  height: 30rem;
+}
+
 .nav .nav-items .nav-link {
   padding: 1.6rem 1rem;
   font-size: 1.1rem;
   position: relative;
+  font-family: "Franklin Gothic Medium";
+  font-size: 1.1rem
 }
+.nav .nav-items .nav-link:hover {
+  background-color: var(--midnight)
+}
+.nav .nav-items .nav-link:hover a {
+color: var(--white)
+}
+
+
 
 .nav .nav-items {
   list-style-type: none;
@@ -48,8 +100,33 @@ ul {
   font-size: 1.6rem;
   padding: 1rem 0;
   display: block;
+  font-family: "Franklin Gothic Medium";
+  font-size: 1.6rem
 }
 
 .nav .social {
   padding: 1.4rem 0;
 }
+.nav .social i {
+  padding: 0.2rem;
+}
+
+.nav .social i:hover{
+  color: #a1c4cf;
+}
+
+/* ----------------*navbar end ---------/
+
+/*-------------Viewport less then or equal to 750px -------*/
+
+@media only screen and (max-width: 750px) {
+  .nav .nav-menu, .nav .nav-items{
+     flex-direction: column
+  }
+
+  .nav .toggle-collapse{
+    display: inline;
+  }
+}
+
+/*-------------Viewport less then or equal to 750px end -------*/
