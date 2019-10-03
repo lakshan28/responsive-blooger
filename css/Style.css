@@ -15,6 +15,7 @@ body {
   --bg-color: #0f0f0f;
   --white: #ffffff;
   --midnight: #104f55;
+  --sky: lightblue;
 
   /* gradient color  */
   --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)
@@ -37,6 +38,43 @@ a {
 ul {
   list-style-type: none;
 }
+
+h1 {
+  font-family: 'Gill Sans';
+  font-size: 1.3rem;
+
+}
+h3 {
+  font-family: 'Trebuchet MS';
+  font-size: 1.3rem;
+}
+button.btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-family: Arial;
+  font-size: 1rem;
+  cursor: pointer;
+  
+}
+
+span {
+  font-family: Verdana;
+}
+.container {
+  margin: 0 5vw
+}
+.text-gray {
+  color: #3f4954;
+}
+p{
+  font-family: 'Times New Roman';
+  color: darkcyan
+}
+
+/*------------Global clases----end------*/
+
+
 
 /*-----------------navbar---------*/
 
@@ -115,7 +153,164 @@ color: var(--white)
   color: #a1c4cf;
 }
 
-/* ----------------*navbar end ---------/
+/* ----------------*navbar end ---------*/
+
+
+/* ----------------*Main Content ---------*/
+
+
+/*----------------Site title---------------*/
+
+main .site-title{
+  background: url("../assets/Background-image.png");
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+}
+
+main .site-title .site-background {
+  padding-top: 10rem;
+  text-align: center;
+  color: var(--white)
+}
+
+main .site-title h1, h3 {
+  margin: 0.3rem
+}
+
+main .site-title .btn{
+  margin: 1.rem;
+  background: lightblue
+}
+
+main .site-title .btn:hover {
+  background: transparent;
+  border: 1px solid white;
+  color: white
+
+}
+/*----------------Site title---End------------*/
+
+/*-----Blog Carousel----*/
+
+main .blog{
+  background: url("../assets/Abract01.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+  background-size: 65%
+}
+
+main .blog .blog-post{
+  padding: 6rem;
+
+}
+main .blog-post .blog-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 3rem 2rem;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2)
+}
+
+main .blog-content .blog-title{
+  padding: 2rem 0;
+}
+
+main .blog-content .btn-blog{
+  padding: 0.7rem 2rem;
+  background: lightblue;
+  margin: 0.5rem
+}
+main .blog-content span{
+  display: block;
+}
+
+section .container .owl-nav{
+
+  top: 0%;
+  margin: 0 auto;
+  width: 100%
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-prev .owl-nav-next{
+  color: #145A32;
+  background: transparent;
+  font-size: 2rem
+}
+.owl-theme .owl-nav[class *='owl']:hover{
+  background: transparent;
+  color: #9B59B6;
+
+}
+.owl-theme .owl-nav[class *='owl']{
+  outline: none;
+}
+
+
+/*-----Blog Carousel----End---*/
+
+ /*----------Site Content------*/
+
+main .site-content{
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+main .post-content {
+  width: 100%;
+  margin-bottom: 5rem;
+
+}
+
+main .site-content .post-content > .post-image, .post-title{
+  padding: 1rem 2rem;
+  position: relative;
+}
+main .site-content .post-content > .post-image .post-info{
+  background: lightblue;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0%;
+  left: 10vw;
+  border-radius: 3rem;
+  
+}
+
+ main .site-content .post-content > .post-image >div {
+   overflow: hidden;
+ }
+ main .site-content .post-content > .post-image .img{
+   width: 100%;
+   transition: all 1s ease-in-out
+ }
+ main .site-content .post-content > .post-image .img:hover{
+   transform: scale(1.2)
+ }
+
+ main .site-content .post-content > .post-image .post-info span {
+   margin: 0.5 rem
+ }
+main .post-content .post-title a {
+  font-family: Georgia;
+  font-size: 1.5rem
+
+}
+
+.site-content .post-content .post-title .post-btn{
+  border-radius: 0;
+
+  padding: 0.7rem 1.5rem;
+  background: #a1c4cf
+}
+
+/*----------Site Content---end---*/
+
+/* ----------------*Main Content   end---------*/
 
 /*-------------Viewport less then or equal to 750px -------*/
 
