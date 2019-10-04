@@ -463,6 +463,26 @@ footer.footer .follow div i {
   color: white;
   padding: 0.4rem
 }
+
+footer.footer .rights{
+  justify-content: center;
+  font-family: serif;
+}
+
+footer.footer .move-up{
+  position: absolute;
+  right: 6%;
+  top: 50%;
+  
+}
+footer.footer .move-up span {
+  color: white
+}
+
+footer.footer .move-up span:hover {
+  color: greenyellow;
+  cursor: pointer;
+}
 /*--------------Footer----------------*/
 
 /*-------------Viewport less then or equal to 750px -------*/
