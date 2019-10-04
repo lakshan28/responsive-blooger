@@ -48,6 +48,9 @@ h3 {
   font-family: 'Trebuchet MS';
   font-size: 1.3rem;
 }
+h2 {
+  color: white
+}
 button.btn {
   border: none;
   border-radius: 2rem;
@@ -303,14 +306,164 @@ main .post-content .post-title a {
 
 .site-content .post-content .post-title .post-btn{
   border-radius: 0;
-
   padding: 0.7rem 1.5rem;
   background: #a1c4cf
+
 }
+
+.site-content .pagination {
+  justify-content: center;
+  color: #145A32;
+  margin: 4rem 0;
+}
+.site-content .pagination a {
+  padding: 0.6rem 0.9rem;
+  border-radius: 2rem;
+  margin: 0.3rem;
+  font-family: 'Segoe UI';
+}
+.site-content .pagination .pages {
+  background: #145A32;
+  color: wheat;
+}
+
 
 /*----------Site Content---end---*/
 
+
+/*----------Sidebar---------*/
+ .sidebar .category-list{
+  font-family: 'Gill Sans';
+
+}
+
+.sidebar .category-list .list-items{
+  background: lightskyblue;
+  padding: 0.4rem 1rem;
+  margin: 0.8rem 0;
+  border-radius: 3rem;
+  width: 70%;
+  display: flex;
+  justify-content: space-between
+}
+.sidebar .category-list .list-items a{
+  color: black;
+}
+.site-content .sidebar .popular-post .post-content{
+  padding: 1rem 0;
+
+}
+.site-content .sidebar .popular-post h2 {
+  padding-top: 8rem;
+}
+.site-content .sidebar .popular-post .post-info{
+  padding: 0.4rem 0.1rem !important;
+  bottom: 0rem !important;;
+  left: 2rem !important;;
+  border-radius: 0rem !important;;
+  background: white !important;
+}
+.site-content .sidebar .popular-post .post-title a {
+font-size: 1rem
+}
+
+.site-content .sidebar .newsletter {
+  padding-top: 10rem;
+}
+
+.site-content .sidebar .newsletter .form-element{
+  padding: 0.5rem 2rem;
+}
+
+.site-content .sidebar .newsletter .input-element {
+  width: 80%;
+  height: 1.9rem;
+  padding: 0.3rem 0.5rem;
+  font-family: 'Franklin Gothic Medium';
+  font-size: 1rem
+}
+
+.site-content .sidebar .newsletter .form-btn {
+  border-radius: 0;
+  padding: 0.8rem 32%;
+  margin: 1rem 0;
+  background: lightskyblue
+}
+
+.site-content .sidebar .pupular-tags {
+  padding: 5rem 0;
+}
+
+.site-content .sidebar .pupular-tags .tags .tag{
+  background: lightskyblue;
+  padding: 0.4rem 1rem;
+  border-radius: 3rem;
+  margin: 0.4rem .6rem;
+}
+
+
+
+
+
+/*----------Sidebar---End------*/
+
+
+
 /* ----------------*Main Content   end---------*/
+
+
+/*--------------Footer----------------*/
+footer.footer {
+  height: 100%;
+  background: black;
+  position: relative;
+}
+
+ footer.footer .container {
+  display: flex;
+  grid-template-columns: 25% 25% 25% 25%
+}
+footer.footer .container >div {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 3rem 0.9rem
+}
+footer.footer .container .about-us h2,p{
+  color: white
+}
+footer.footer .newsletter .form-element{
+  background: black;
+  display: inline-block;
+}
+
+footer.footer .newsletter .form-element input{
+  padding: 0.5rem 0.7rem;
+  border: none;
+  background: transparent;
+  color: white;
+  font-family: 'Gill Sans';
+  font-size: 1rem;
+  width: 59%
+}
+footer.footer .newsletter .form-element span{
+  background: lightblue;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  
+}
+
+footer.footer .instagram div > img{
+  display: inline-block;
+  width: 25%;
+  height: 50%;
+  margin: 0.3rem 0.4rem
+}
+
+footer.footer .follow div i {
+  color: white;
+  padding: 0.4rem
+}
+/*--------------Footer----------------*/
 
 /*-------------Viewport less then or equal to 750px -------*/
 
